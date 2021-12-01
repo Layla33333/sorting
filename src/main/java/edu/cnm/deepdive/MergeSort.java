@@ -20,8 +20,8 @@ public class MergeSort {
       while (leftIndex < midpoint && rightIndex < end) {
         int leftValue = data[leftIndex];
         int rightValue = data[rightIndex];
-        if (leftIndex <= rightValue) {
-          merged[mergedIndex] = leftIndex;
+        if (leftValue <= rightValue) {
+          merged[mergedIndex] = leftValue;
           leftIndex++;
         } else {
           merged[mergedIndex] = rightValue;
